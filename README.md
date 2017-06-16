@@ -19,4 +19,13 @@ Use Case 1
 ./natsping -s "10.193.67.11:4222" -u nats -p "password" -sub "agent.05e3468d-72e1-4796-a871-0c143c25013a" -m '{"method":"ping","arguments":[], "reply_to": "agent.reply_to_natsping"}'
 ```
 
+## Example Output
 
+```
+natsping -s "10.193.67.11:4222" -u nats -p "d_Nn8fsDbO5zVdCW0CieljAGFvgBn1cg" -sub "agent.05e3468d-72e1-4796-a871-0c143c25013a" -m '{"method":"ping","arguments":[], "reply_to": "agent.reply_to_natsping"}'
+Using url nats://nats:d_Nn8fsDbO5zVdCW0CieljAGFvgBn1cg@10.193.67.11:4222
+Published [agent.05e3468d-72e1-4796-a871-0c143c25013a] : '{"method":"ping","arguments":[], "reply_to": "agent.reply_to_natsping"}'
+[2017-06-16 18:22:46.172985421 -0500 CDT]Received on subject [agent.05e3468d-72e1-4796-a871-0c143c25013a]: '{"method":"ping","arguments":[], "reply_to": "agent.reply_to_natsping"}'
+[2017-06-16 18:22:46.173591726 -0500 CDT]Received on subject [agent.reply_to_natsping]: '{"value":"pong"}'
+Reply received successfully!
+```
