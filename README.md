@@ -3,7 +3,6 @@
 ```
 go get github.com/nats-io/go-nats
 go get github.com/randomtask1155/natsping
-go install github.com/randomtask1155/natsping
 ```
 
 ## get usage
